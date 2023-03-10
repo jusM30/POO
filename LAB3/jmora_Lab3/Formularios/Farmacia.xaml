@@ -1,0 +1,32 @@
+﻿<Window x:Class="jmora_Lab2.Formularios.Farmacia"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:jmora_Lab2.Formularios"
+        mc:Ignorable="d"
+        Title="Farmacia" Height="450" Width="600">
+    <Grid Background="#FF073C48">
+        <RadioButton Content="Consultar" HorizontalAlignment="Left" Margin="45,24,0,0" VerticalAlignment="Top" Height="23" Width="107" FontSize="18"/>
+        <RadioButton Content="Modificación" HorizontalAlignment="Left" Margin="448,24,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <RadioButton Content="Inclusión" HorizontalAlignment="Left" Margin="249,24,0,0" VerticalAlignment="Top" FontSize="18" Checked="RadioButton_Checked"/>
+        <Label Content="Cédula Jurídica" HorizontalAlignment="Left" Margin="67,91,0,0" VerticalAlignment="Top" FontSize="18" Height="29" Width="138" FontFamily="Bahnschrift" Background="#FF0E505F" FontWeight="Bold"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="67,135,0,0" VerticalAlignment="Top" FontSize="18" Height="27" Width="76" FontFamily="Bahnschrift" Background="#FF0E505F" FontWeight="Bold"/>
+        <Label Content="Teléfono" HorizontalAlignment="Left" Margin="67,177,0,0" VerticalAlignment="Top" FontSize="18" Height="27" Width="76" FontFamily="Bahnschrift" Background="#FF0E505F" FontWeight="Bold"/>
+        <Label Content="Correo Electrónico" HorizontalAlignment="Left" Margin="67,217,0,0" VerticalAlignment="Top" FontSize="18" Height="27" Width="163" FontFamily="Bahnschrift" Background="#FF0E505F" FontWeight="Bold"/>
+        <TextBox x:Name="txtCedula" HorizontalAlignment="Left" Margin="249,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202" Height="28" />
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Margin="249,134,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202" Height="28"/>
+        <TextBox x:Name="txtTelefono" HorizontalAlignment="Left" Margin="249,177,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202" Height="28"/>
+        <TextBox x:Name="txtCorreo" HorizontalAlignment="Left" Margin="249,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202" Height="28"/>
+        <Label Content="Adicionado por:" HorizontalAlignment="Left" Margin="69,280,0,0" VerticalAlignment="Top" Height="26" Width="112" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Margin="67,306,0,0" TextWrapping="Wrap" Text="jMora30" VerticalAlignment="Top" Width="120"  Height="18" FontSize="14" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Margin="66,363,0,0" TextWrapping="Wrap" Text="jMora30" VerticalAlignment="Top" Width="120"  Height="18" FontSize="14" IsEnabled="False"/>
+        <Label Content="Modificado por:" HorizontalAlignment="Left" Margin="66,337,0,0" VerticalAlignment="Top" Height="26" Width="115" FontSize="14"/>
+        <Label Content="Fecha de Adición:" HorizontalAlignment="Left" Margin="210,280,0,0" VerticalAlignment="Top" Height="26" Width="120" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Margin="210,306,0,0" TextWrapping="Wrap" Text="11/2/2023 12:26 PM" VerticalAlignment="Top" Width="143"  Height="18" FontSize="14" IsEnabled="False"/>
+        <Label Content="Fecha Modificación:" HorizontalAlignment="Left" Margin="208,337,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Margin="210,363,0,0" TextWrapping="Wrap" Text="11/2/2023 12:26 PM" VerticalAlignment="Top" Width="143" Height="18" FontSize="14" IsEnabled="False"/>
+        <Button Content="Aceptar" HorizontalAlignment="Left" Margin="379,308,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18" Background="#FF0E505F" BorderBrush="White" Height="50" Width="86" FontWeight="Bold" RenderTransformOrigin="0.043,1.516" Click="Button_Click"/>
+
+    </Grid>
+</Window>

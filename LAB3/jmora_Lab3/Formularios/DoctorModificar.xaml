@@ -1,0 +1,33 @@
+﻿<Window x:Class="jmora_Lab3.Formularios.DoctorModificar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:jmora_Lab3.Formularios"
+        mc:Ignorable="d"
+        Title="DoctorModificar" Height="450" Width="500">
+    <Grid Background="#FF0E505F">
+        <RadioButton Content="Consultar" HorizontalAlignment="Left" Margin="39,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.436,-0.666" Checked="RadioButton_Checked" Width="89" Height="22"/>
+        <RadioButton Content="Modificación" HorizontalAlignment="Left" Margin="346,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.304,4.214" Height="22" Width="105" Checked="RadioButton_Checked_1"/>
+        <RadioButton Content="Inclusión" HorizontalAlignment="Left" Margin="193,35,0,0" VerticalAlignment="Top" Height="22" Width="79" Checked="RadioButton_Checked"/>
+        <Label Content="Código de Medico" HorizontalAlignment="Left" Margin="50,115,0,0" VerticalAlignment="Top" FontSize="18" Height="29" Width="158" FontFamily="Bahnschrift" Background="#FF0E505F" FontWeight="Bold"/>
+        <Label Content="Nombre Completo" HorizontalAlignment="Left" Margin="50,159,0,0" VerticalAlignment="Top" FontSize="18" Height="27" Width="158" FontFamily="Bahnschrift" Background="#FF0E505F" FontWeight="Bold"/>
+        <Label Content="Cédula" HorizontalAlignment="Left" Margin="50,201,0,0" VerticalAlignment="Top" FontSize="18" Height="27" Width="76" FontFamily="Bahnschrift" Background="#FF0E505F" FontWeight="Bold"/>
+        <TextBox x:Name="txtCodigo" HorizontalAlignment="Left" Margin="232,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202" Height="28"/>
+        <TextBox x:Name="txtNombreCom" HorizontalAlignment="Left" Margin="232,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202" Height="28"/>
+        <TextBox x:Name="txtCedula" HorizontalAlignment="Left" Margin="232,201,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202" Height="28"/>
+        <Label Content="Adicionado por:" HorizontalAlignment="Left" Margin="52,297,0,0" VerticalAlignment="Top" Height="26" Width="112" FontSize="14"/>
+        <TextBox x:Name="txtAdicionado" HorizontalAlignment="Left" Margin="50,323,0,0" TextWrapping="Wrap" Text="jMora30" VerticalAlignment="Top" Width="120"  Height="18" FontSize="14" IsEnabled="False"/>
+        <TextBox HorizontalAlignment="Left" Margin="49,380,0,0" TextWrapping="Wrap" Text="jMora30" VerticalAlignment="Top" Width="120"  Height="18" FontSize="14" IsEnabled="False"/>
+        <Label Content="Modificado por:" HorizontalAlignment="Left" Margin="49,354,0,0" VerticalAlignment="Top" Height="26" Width="115" FontSize="14"/>
+        <Label x:Name="txtFechaAdicion" Content="Fecha de Adición:" HorizontalAlignment="Left" Margin="193,297,0,0" VerticalAlignment="Top" Height="26" Width="120" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Margin="193,323,0,0" TextWrapping="Wrap" Text="11/2/2023 12:26 PM" VerticalAlignment="Top" Width="143"  Height="18" FontSize="14" IsEnabled="False"/>
+        <Label Content="Fecha Modificación:" HorizontalAlignment="Left" Margin="191,354,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Margin="193,380,0,0" TextWrapping="Wrap" Text="11/2/2023 12:26 PM" VerticalAlignment="Top" Width="143" Height="18" FontSize="14" IsEnabled="False"/>
+        <Button x:Name="btnModificar"  Content="Modificar" HorizontalAlignment="Left" Margin="359,355,0,0" VerticalAlignment="Top" Height="43" Width="92" Click="Button_Click" Background="#FF0E505F" FontSize="18" Foreground="White"/>
+        <ComboBox x:Name="cmbDoctores" HorizontalAlignment="Left" Margin="50,62,0,0" VerticalAlignment="Top" Width="380" SelectionChanged="ComboBox_SelectionChanged" FontSize="14"/>
+        <Label Content="Estado" HorizontalAlignment="Left" Margin="52,247,0,0" VerticalAlignment="Top" FontSize="18" Height="27" Width="76" FontFamily="Bahnschrift" Background="#FF0E505F" FontWeight="Bold"/>
+        <TextBox x:Name="txtEstado" HorizontalAlignment="Left" Margin="232,247,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="202" Height="28"/>
+
+    </Grid>
+</Window>

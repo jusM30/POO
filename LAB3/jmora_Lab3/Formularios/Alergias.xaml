@@ -1,0 +1,28 @@
+﻿<Window x:Class="jmora_Lab2.Formularios.Alergias"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:jmora_Lab2.Formularios"
+        mc:Ignorable="d"
+        Title="Alergias" Height="470" Width="450">
+    <Grid Background="#FF0099A9">
+        <RadioButton Content="Consultar" HorizontalAlignment="Left" Margin="25,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.436,-0.666" Checked="RadioButton_Checked" Width="89" Height="33"/>
+        <RadioButton Content="Modificación" HorizontalAlignment="Left" Margin="329,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.304,4.214" Height="33" Width="105"/>
+        <RadioButton Content="Inclusión" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" Height="33" Width="79" Checked="RadioButton_Checked"/>
+        <Label Content="Identificador del Cliente" HorizontalAlignment="Left" Margin="10,155,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="20" Height="36" Width="221" Background="#FF8FD2D9" FontWeight="Bold"/>
+        <Label Content="Alergias" HorizontalAlignment="Left" Margin="10,205,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18" Height="35" Width="76" Background="#FF8FD2D9" FontWeight="Bold"/>
+        <Label Content="Adicionado por:" HorizontalAlignment="Left" Margin="39,287,0,0" VerticalAlignment="Top" Height="26" Width="94"/>
+        <TextBox HorizontalAlignment="Left" Margin="37,313,0,0" TextWrapping="Wrap" Text="jMora30" VerticalAlignment="Top" Width="120" IsEnabled="False"  Height="18"/>
+        <TextBox HorizontalAlignment="Left" Margin="37,357,0,0" TextWrapping="Wrap" Text="jMora30" VerticalAlignment="Top" Width="120" IsEnabled="False"  Height="18"/>
+        <Label Content="Modificado por:" HorizontalAlignment="Left" Margin="37,331,0,0" VerticalAlignment="Top" Height="26" Width="94"/>
+        <Label Content="Fecha de Adición:" HorizontalAlignment="Left" Margin="180,287,0,0" VerticalAlignment="Top" Height="26" Width="103"/>
+        <TextBox HorizontalAlignment="Left" Margin="180,313,0,0" TextWrapping="Wrap" Text="11/2/2023 12:26 PM" VerticalAlignment="Top" Width="120" IsEnabled="False"  Height="18"/>
+        <Label Content="Fecha Modificación:" HorizontalAlignment="Left" Margin="180,331,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="182,357,0,0" TextWrapping="Wrap" Text="11/2/2023 12:26 PM" VerticalAlignment="Top" Width="120" IsEnabled="False"  Height="18"/>
+        <Button Content="Aceptar" HorizontalAlignment="Left" Margin="320,328,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="14" Background="#FF8FD2D9" BorderBrush="White" Height="29" Width="61" FontWeight="Bold" Click="Button_Click_1"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="242,155,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="135"/>
+        <TextBox x:Name="txtAlergias" HorizontalAlignment="Left" Margin="242,214,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="135"/>
+
+    </Grid>
+</Window>

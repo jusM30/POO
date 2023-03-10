@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A622031E-5B14-42DA-A970-FA800AEC2029}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VeterinariaWpfApp1</RootNamespace>
+    <AssemblyName>VeterinariaWpfApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Bases de Datos\Conn.cs" />
+    <Compile Include="Bases de Datos\ConnSQL.cs" />
+    <Compile Include="Clases\clsUsuario.cs" />
+    <Compile Include="Datos\dtoUsuario.cs" />
+    <Compile Include="Utilidades\escribirLog.cs" />
+    <Compile Include="Utilidades\util.cs" />
+    <Compile Include="Utilidades\variablesGlobales.cs" />
+    <Compile Include="Ventanas\Ingreso.xaml.cs">
+      <DependentUpon>Ingreso.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ventanas\Propietario.xaml.cs">
+      <DependentUpon>Propietario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clases\clsHoja.cs" />
+    <Compile Include="Clases\clsMascota.cs" />
+    <Compile Include="Clases\clsPropietario.cs" />
+    <Page Include="Ventanas\Ingreso.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ventanas\Propietario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ventanas\003-pata-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Recursos\paleta.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Ventanas\004-mascotas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Recursos\001-pata.png" />
+    <Resource Include="Recursos\002-botella-de-pet.png" />
+    <Resource Include="Recursos\003-pata-1.png" />
+    <Resource Include="Recursos\004-mascotas.png" />
+    <Resource Include="Recursos\005-factura.png" />
+    <Resource Include="Recursos\006-recibo.png" />
+    <Resource Include="Recursos\007-tarjeta-de-miembro.png" />
+    <Resource Include="Recursos\008-factura-1.png" />
+    <Resource Include="Recursos\009-vacunacion.png" />
+    <Resource Include="Recursos\010-huellas-de-garras.png" />
+    <Resource Include="Recursos\011-la-tienda-de-animales.png" />
+    <Resource Include="Recursos\012-trata.png" />
+    <Resource Include="Recursos\013-hueso.png" />
+    <Resource Include="Recursos\014-parque.png" />
+    <Resource Include="Recursos\015-lavar-al-perro.png" />
+    <Resource Include="Recursos\016-hombre-nina-y-perro.png" />
+    <Resource Include="Recursos\017-huella-de-perro-en-una-casa.png" />
+    <Resource Include="Recursos\018-guardar-carpeta.png" />
+    <Resource Include="Recursos\019-editar.png" />
+    <Resource Include="Recursos\020-delete.png" />
+    <Resource Include="Recursos\021-loupe.png" />
+    <Resource Include="Recursos\022-controlar.png" />
+    <Resource Include="Recursos\023-cancelar.png" />
+    <Resource Include="Recursos\024-nueva-pagina.png" />
+    <Resource Include="Recursos\025-huellas-dactilares.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

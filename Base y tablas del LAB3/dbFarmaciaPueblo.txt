@@ -1,0 +1,29 @@
+CREATE DATABASE dbFarmaciaPueblo
+GO
+
+USE dbFarmaciaPueblo
+
+CREATE TABLE Login(
+	idUsuario int identity(1,1) not null,
+	usuario varchar(20) not null,
+	clave varchar(15) not null,
+	estado varchar(1) not null,
+	adicionadoPor varchar(25) not null,
+	fechaAdicion datetime not null,
+	modificadoPor varchar(25) not null,
+	fechaModificacion datetime not null,
+);
+
+CREATE TABLE Doctor(
+	idDoc int identity(1,1) not null,
+	NombreDoctor varchar(50) not null,
+	CodigoMedico int not null,
+	Cedula varchar(20) not null,
+	adicionadoPor varchar(25) not null,
+	fechaAdicion datetime not null,
+	modificadoPor varchar(25) not null,
+	fechaModificacion datetime not null,
+);
+
+
+Insert into tbDoctor ([NombreDoctor],[CodigoMedico],[Cedula],[adicionadoPor],[fechaAdicion],[modificadoPor],[fechaModificacion]) values('','','','',GETDATE(),'','')
